@@ -1,0 +1,94 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #1b1b1b;
+    background-image: url(../img/Vector.svg);
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.right{
+    position: relative;
+}
+
+.left{
+    width: 35%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+h1{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 90%;
+}
+.description{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 170%;
+}
+.circle{
+    position: absolute;
+    right: 570px;
+    bottom: 0px;
+    width: 100px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 50%;
+    animation: circle-anim 3s alternate linear forwards;
+}
+.girl{
+    background-image: url(../main.png);
+    background-size: cover;
+    width: 24%;
+    height: 670px;
+    position: absolute;
+    right: 500px;
+    bottom: -130px;
+    transition: 1s all;
+    animation: girl_anim 2s alternate linear forwards;
+}
+.img{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    right: -50px;
+    top: 175px;
+}
+@keyframes circle-anim{
+    0% {
+        transform: scale(0);
+    }
+    20%{
+        transform: scale(2.5);
+    }
+    40%{
+        transform: scale(2.5);
+    }
+    60%{
+        transform: scale(2.5);
+    }
+    70%{
+        transform: scale(2.5);
+    }
+    80%{
+        transform: scale(2.5);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes girl_anim{
+    0% {
+        transform: translateY(500px);
+    }
+    25%{
+        transform: translateY(200px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-230px);
+    }
+}
